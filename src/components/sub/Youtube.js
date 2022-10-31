@@ -9,8 +9,6 @@ export default function Youtube() {
     const Vids = useSelector(store => store.youtube.data);
     console.log(Vids);
 
-
-
     return (
         <>
             <Layout name={"Youtube"}>
