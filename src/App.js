@@ -1,6 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
 import { fetchYoutube } from './redux/youtubeSlice';
 import { fetchMembers } from './redux/memberSlice';
+import { fetchFlickr } from './redux/flickrSlice';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 
@@ -24,6 +25,7 @@ function App() {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
+		dispatch(fetchFlickr({ type: 'user', user: '194799575@N04' }))
 		dispatch(fetchYoutube());
 		dispatch(fetchMembers());
 	}, [])
