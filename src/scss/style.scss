@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+$web_note: 1569px;
+$tablet: 1179px;
+$mobile: 539px;
+//반응형을 최대한 세세하게 디바이스에 맞춰서 5개이상은 구현을 하셔야한다
+
+//common
+@import 'common/reset';
+@import 'common/footer';
+@import 'common/layout';
+@import 'common/header';
+@import 'common/popup';
+@import 'common/menu';
+
+//main
+@import 'main/news';
+@import 'main/pics';
+@import 'main/vids';
+@import 'main/visual';
+@import 'main/btns';
+
+//sub
+@import 'sub/community';
+@import 'sub/department';
+@import 'sub/gallery';
+@import 'sub/location';
+@import 'sub/member';
+@import 'sub/youtube';
